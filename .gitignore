@@ -1,0 +1,5 @@
+.env
+
+influxdb/
+grafana/
+build/
