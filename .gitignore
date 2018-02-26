@@ -1,5 +1,5 @@
 .env
 
-influxdb/
 grafana/
 build/
+test/
