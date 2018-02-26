@@ -6,7 +6,8 @@ services:
     ports:
       - 9090:9090
     volumes:
-      - prometheus:/etc/prometheus
+      - prometheus-conf:/etc/prometheus
+      - prometheus-data:/data
     tty: true
   grafana:
     image: grafana/grafana
