@@ -30,7 +30,7 @@ services:
     image: influxdb:1.4
     ports:
       - 8086:8086
-      - 8888:8888 # For UDP, Arduino
+      - '8888:8888/udp' # For UDP, Arduino
     volumes:
       - influxdb-data:/var/lib/influxdb
       - influxdb-conf:/etc/influxdb
