@@ -1,7 +1,7 @@
-# Prometheus - Grafana Stack
-> docker-compose
+# Monitorize
+> Monitoring Stack
 
-This is a docker-compose Prometheus - Grafana stack.
+Dockerized stack for monitoring using: Prometheus, InfluxDB and Grafana.
 
 ## Usage
 
@@ -10,18 +10,18 @@ You require **docker-compose** version `1.13.0+`. To check **docker-compose** ve
 1. Download the latest release:
 
     ```sh
-    LATEST=$(curl -s https://api.github.com/repos/friasdesign/grafana-prometheus/releases/latest | grep browser_download_url | cut -d '"' -f 4)
+    LATEST=$(curl -s https://api.github.com/repos/friasdesign/monitorize/releases/latest | grep browser_download_url | cut -d '"' -f 4)
     curl -LOk $LATEST
     ```
 
 2. Uncompress the file:
 
-    `tar -zxvf grafana-prometheus.tar.gz`
+    `tar -zxvf monitorize.tar.gz`
 
 
 3. Go into the newly created folder:
 
-    `cd grafana-prometheus`
+    `cd monitorize`
 
 
 4. Create a `.env` file with the credentials for the database, use `.env.template` file as a guide replacing all values.

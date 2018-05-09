@@ -2,7 +2,7 @@ if [ ! -d "build" ]; then
     mkdir build
 fi
 
-TEMP="grafana-prometheus"
+TEMP="monitorize"
 if [ ! -d "$TEMP" ]; then
     mkdir $TEMP
 fi
